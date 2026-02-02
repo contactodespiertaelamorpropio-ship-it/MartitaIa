@@ -1,40 +1,40 @@
 // Flujo de emociones y retos
 const flow = {
-  rabia: "La rabia contiene energía no expresada ?? Respira profundo y libera tensión en tus hombros. No te juzgues.",
-  enojo: "El enojo surge cuando sientes que cruzaron tus límites ?? Reconoce tu valor y regresa al centro.",
-  impotencia: "La impotencia aparece cuando pierdes sensación de control ?? Hoy elige una pequeña acción que sí dependa de ti.",
-  alegria: "Qué hermoso sentir alegría ?? Guarda este momento como ancla emocional positiva.",
-  felicidad: "La felicidad es expansión emocional ?? Permítete disfrutar sin culpa.",
-  fracaso: "El fracaso no define tu valor ?? Define tu aprendizaje. Estás creciendo aunque no lo veas aún.",
-  rechazo: "El rechazo duele porque activa heridas profundas ?? Recuerda: tu valor no depende de aprobación externa.",
-  decepcion: "La decepción aparece cuando tus expectativas no se cumplen ?? Hoy elige soltar el control y cuidarte.",
-  verguenza: "La vergüenza es una emoción social aprendida ?? No eres tu error. Eres tu proceso.",
-  timidez: "La timidez no es debilidad ?? Es sensibilidad. Avanza a tu ritmo con amor.",
-  reto: "Dirígete al ejercicio del día y continúa fortaleciendo tu amor propio ??",
-  refuerzo: "Estoy orgullosa de ti ?? Cada paso consciente transforma tu relación contigo misma."
+  rabia: "La rabia contiene energÃ­a no expresada ðŸ˜¡ Respira profundo y libera tensiÃ³n en tus hombros. No te juzgues.",
+  enojo: "El enojo surge cuando sientes que cruzaron tus lÃ­mites ðŸ”¥ Reconoce tu valor y regresa al centro.",
+  impotencia: "La impotencia aparece cuando pierdes sensaciÃ³n de control ðŸ˜ž Hoy elige una pequeÃ±a acciÃ³n que sÃ­ dependa de ti.",
+  alegria: "QuÃ© hermoso sentir alegrÃ­a ðŸ˜Š Guarda este momento como ancla emocional positiva.",
+  felicidad: "La felicidad es expansiÃ³n emocional ðŸ¥° PermÃ­tete disfrutar sin culpa.",
+  fracaso: "El fracaso no define tu valor ðŸ’” Define tu aprendizaje. EstÃ¡s creciendo aunque no lo veas aÃºn.",
+  rechazo: "El rechazo duele porque activa heridas profundas ðŸš« Recuerda: tu valor no depende de aprobaciÃ³n externa.",
+  decepcion: "La decepciÃ³n aparece cuando tus expectativas no se cumplen ðŸ˜” Hoy elige soltar el control y cuidarte.",
+  verguenza: "La vergÃ¼enza es una emociÃ³n social aprendida ðŸ˜³ No eres tu error. Eres tu proceso.",
+  timidez: "La timidez no es debilidad ðŸ™ˆ Es sensibilidad. Avanza a tu ritmo con amor.",
+  reto: "DirÃ­gete al ejercicio del dÃ­a y continÃºa fortaleciendo tu amor propio ðŸ’—",
+  refuerzo: "Estoy orgullosa de ti ðŸ’« Cada paso consciente transforma tu relaciÃ³n contigo misma."
 };
 
 // Lista de emociones
 const emociones = [
-  {label:"?? Rabia", key:"rabia"},
-  {label:"?? Enojo", key:"enojo"},
-  {label:"?? Impotencia", key:"impotencia"},
-  {label:"?? Alegría", key:"alegria"},
-  {label:"?? Felicidad", key:"felicidad"},
-  {label:"?? Fracaso", key:"fracaso"},
-  {label:"?? Rechazo", key:"rechazo"},
-  {label:"?? Decepción", key:"decepcion"},
-  {label:"?? Vergüenza", key:"verguenza"},
-  {label:"?? Timidez", key:"timidez"}
+  {label:"ðŸ˜¡ Rabia", key:"rabia"},
+  {label:"ðŸ”¥ Enojo", key:"enojo"},
+  {label:"ðŸ˜ž Impotencia", key:"impotencia"},
+  {label:"ðŸ˜Š AlegrÃ­a", key:"alegria"},
+  {label:"ðŸ¥° Felicidad", key:"felicidad"},
+  {label:"ðŸ’” Fracaso", key:"fracaso"},
+  {label:"ðŸš« Rechazo", key:"rechazo"},
+  {label:"ðŸ˜” DecepciÃ³n", key:"decepcion"},
+  {label:"ðŸ˜³ VergÃ¼enza", key:"verguenza"},
+  {label:"ðŸ™ˆ Timidez", key:"timidez"}
 ];
 
-// Lista del reto de 30 días
+// Lista del reto de 30 dÃ­as
 const retos = [
-  "Día 1: Escribe 3 cosas que agradeces.",
-  "Día 2: Haz una pausa consciente de 5 minutos.",
-  "Día 3: Regálate un cumplido frente al espejo.",
-  "Día 4: Camina 10 minutos observando tu entorno.",
-  "Día 5: Escribe una meta pequeña y cúmplela."
+  "DÃ­a 1: Escribe 3 cosas que agradeces.",
+  "DÃ­a 2: Haz una pausa consciente de 5 minutos.",
+  "DÃ­a 3: RegÃ¡late un cumplido frente al espejo.",
+  "DÃ­a 4: Camina 10 minutos observando tu entorno.",
+  "DÃ­a 5: Escribe una meta pequeÃ±a y cÃºmplela."
   // Puedes seguir agregando hasta 30
 ];
 
@@ -43,14 +43,14 @@ let userName = localStorage.getItem("userName");
 
 window.onload = () => {
   if (!userName) {
-    userName = prompt("Hola ?? Soy Martita, ¿cómo te llamas?");
+    userName = prompt("Hola ðŸ’— Soy Martita, Â¿cÃ³mo te llamas?");
     localStorage.setItem("userName", userName);
   }
-  document.getElementById("welcome").innerHTML = `<p>Bienvenida/o <b>${userName}</b> ?? Estoy aquí para acompañarte.</p>`;
+  document.getElementById("welcome").innerHTML = `<p>Bienvenida/o <b>${userName}</b> ðŸ’— Estoy aquÃ­ para acompaÃ±arte.</p>`;
   cargarBotones();
 };
 
-// Crear botones dinámicos
+// Crear botones dinÃ¡micos
 function cargarBotones() {
   const feelingsList = document.getElementById("feelings");
   emociones.forEach(e => {
@@ -66,7 +66,7 @@ function cargarBotones() {
   retos.forEach((r, i) => {
     const li = document.createElement("li");
     const btn = document.createElement("button");
-    btn.textContent = `Día ${i+1}`;
+    btn.textContent = `DÃ­a ${i+1}`;
     btn.onclick = () => mostrarTexto(r);
     li.appendChild(btn);
     retoList.appendChild(li);
@@ -79,7 +79,7 @@ function mostrarTexto(texto) {
   document.getElementById("volverBtn").classList.remove("hidden");
 }
 
-// Volver al menú
+// Volver al menÃº
 function volverMenu() {
   document.getElementById("response").innerText = "";
   document.getElementById("volverBtn").classList.add("hidden");
