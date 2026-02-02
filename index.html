@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martita - Guía de Amor Propio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ventana automática -->
+  <div id="martita-window" class="window">
+    <div class="header">
+      <h2>?? Hola soy Martita - Tu Guía de Amor Propio</h2>
+    </div>
+    <div class="content">
+      <div id="welcome"></div>
+      
+      <!-- Botón general de emociones -->
+      <button class="general-btn" onclick="toggleSection('feelings')">¿Cómo te sientes ahora?</button>
+      <ul id="feelings" class="hidden"></ul>
+
+      <!-- Botón general del reto -->
+      <button class="general-btn" onclick="toggleSection('reto30')">?? Guía del reto de 30 días</button>
+      <ul id="reto30" class="hidden"></ul>
+
+      <!-- Área de texto dinámico -->
+      <div id="response" class="response"></div>
+
+      <!-- Botón volver -->
+      <button id="volverBtn" class="volver hidden" onclick="volverMenu()">Volver al menú</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

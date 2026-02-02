@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4, #8a2be2, #ffffff, #dda0dd);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  background: linear-gradient(90deg, #ff69b4, #8a2be2);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.general-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff69b4, #dda0dd);
+  color: white;
+  font-weight: bold;
+}
+
+.general-btn:nth-child(odd) {
+  background: linear-gradient(90deg, #8a2be2, #ffb6c1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+ul li button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ffb6c1, #dda0dd);
+  color: #333;
+  font-weight: bold;
+}
+
+.response {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f8f0ff;
+  border-radius: 8px;
+  min-height: 50px;
+}
+
+.volver {
+  margin-top: 15px;
+  background: linear-gradient(90deg, #ff69b4, #8a2be2);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
