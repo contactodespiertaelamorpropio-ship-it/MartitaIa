@@ -7,28 +7,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Ventana automática -->
-  <div id="martita-window" class="window">
-    <div class="header">
-      <h2>💗 Hola soy Martita - Tu Guía de Amor Propio</h2>
+  <div class="ia-window" id="iaWindow">
+    <h2 id="saludo">💗 Hola sol, soy Martita</h2>
+    <p id="subSaludo">Tu compañera de Amor Propio</p>
+    
+    <!-- Botón general sentimientos -->
+    <button class="btn btn-sentimientos" onclick="toggleSection('sentimientos')">¿Cómo te sientes ahora?</button>
+    <div id="sentimientos" class="hidden">
+      <button class="btn" onclick="showText('La rabia contiene energía no expresada 😡 Respira profundo y libera tensión en tus hombros. No te juzgues.')">😡 Rabia</button>
+      <button class="btn" onclick="showText('El enojo surge cuando sientes que cruzaron tus límites 🔥 Reconoce tu valor y regresa al centro.')">🔥 Enojo</button>
+      <button class="btn" onclick="showText('La impotencia aparece cuando pierdes sensación de control 😞 Hoy elige una pequeña acción que sí dependa de ti.')">😞 Impotencia</button>
+      <button class="btn" onclick="showText('Qué hermoso sentir alegría 😊 Guarda este momento como ancla emocional positiva.')">😊 Alegría</button>
+      <button class="btn" onclick="showText('La felicidad es expansión emocional 🥰 Permítete disfrutar sin culpa.')">🥰 Felicidad</button>
+      <button class="btn" onclick="showText('El fracaso no define tu valor 💔 Define tu aprendizaje. Estás creciendo aunque no lo veas aún.')">💔 Fracaso</button>
+      <button class="btn" onclick="showText('El rechazo duele porque activa heridas profundas 🚫 Recuerda: tu valor no depende de aprobación externa.')">🚫 Rechazo</button>
+      <button class="btn" onclick="showText('La decepción aparece cuando tus expectativas no se cumplen 😔 Hoy elige soltar el control y cuidarte.')">😔 Decepción</button>
+      <button class="btn" onclick="showText('La vergüenza es una emoción social aprendida 😳 No eres tu error. Eres tu proceso.')">😳 Vergüenza</button>
+      <button class="btn" onclick="showText('La timidez no es debilidad 🙈 Es sensibilidad. Avanza a tu ritmo con amor.')">🙈 Timidez</button>
     </div>
-    <div class="content">
-      <div id="welcome"></div>
-      
-      <!-- Botón general de emociones -->
-      <button class="general-btn" onclick="toggleSection('feelings')">¿Cómo te sientes ahora?</button>
-      <ul id="feelings" class="hidden"></ul>
 
-      <!-- Botón general del reto -->
-      <button class="general-btn" onclick="toggleSection('reto30')">📘 Guía del reto de 30 días</button>
-      <ul id="reto30" class="hidden"></ul>
-
-      <!-- Área de texto dinámico -->
-      <div id="response" class="response"></div>
-
-      <!-- Botón volver -->
-      <button id="volverBtn" class="volver hidden" onclick="volverMenu()">Volver al menú</button>
+    <!-- Botón general reto -->
+    <button class="btn btn-reto" onclick="toggleSection('reto')">📘 Guía del reto de 30 días</button>
+    <div id="reto" class="hidden">
+      <button class="btn" onclick="showText('Día 1: Escribe 3 cosas que agradeces hoy 💫')">Día 1</button>
+      <button class="btn" onclick="showText('Día 2: Haz una pausa consciente y respira profundo 🌬️')">Día 2</button>
+      <button class="btn" onclick="showText('Día 3: Regálate un momento de autocuidado 🛁')">Día 3</button>
+      <!-- Agrega más días hasta el 30 -->
     </div>
+
+    <!-- Caja de texto dinámica -->
+    <div id="textBox" class="text-box hidden"></div>
+    <button id="volverBtn" class="btn hidden" onclick="volverMenu()">Volver al menú</button>
   </div>
 
   <script src="script.js"></script>
