@@ -63,7 +63,7 @@ body {
 }
 
 .text-box {
-  position: absolute; /* o fixed si quieres que se mantenga al hacer scroll */ 
+  position: fixed; /* o fixed si quieres que se mantenga al hacer scroll */ 
   top: 10%; /* distancia desde arriba, puedes ajustar */ 
   left: 50%; /* centrado horizontal */ 
   transform: translateX(-50%); /* corrige el centrado horizontal */
@@ -79,4 +79,5 @@ body {
 .hidden {
   display: none;
 }
+
 
