@@ -11,7 +11,7 @@ body {
 
 .ia-window {
   width: 95%;
-  max-width: 400px;
+  max-width: 400px; /* en pantallas grandes */
   background: linear-gradient(135deg, pink, fuchsia, violet, lavender);
   border-radius: 15px;
   padding: 20px;
@@ -19,6 +19,20 @@ body {
   display: none;
   flex-direction: column;
   text-align: center;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 600px) {
+  .ia-window {
+    max-width: 90%;   /* ocupa casi todo el ancho en móviles */
+    top: 5%;          /* más pegado arriba para pantallas pequeñas */
+    padding: 15px;    /* menos padding para que no se vea apretado */
+  }
 }
 
 .ia-window h2 {
@@ -63,22 +77,19 @@ body {
 }
 
 .text-box {
-  position: fixed; /* o fixed si quieres que se mantenga al hacer scroll */ 
-  top: 10%; /* distancia desde arriba, puedes ajustar */ 
-  left: 50%; /* centrado horizontal */ 
-  transform: translateX(-50%); /* corrige el centrado horizontal */
   background: linear-gradient(360deg, pink, fuchsia, violet, lavender);
   color: black;
   padding: 15px;
   border-radius: 10px;
   margin-top: 10px;
   font-size: 16px;
-  font-weight: bold; /* aquí defines el grosor de la fuente */;
+  font-weight: ; /* aquí defines el grosor de la fuente */;
 }
 
 .hidden {
   display: none;
 }
+
 
 
 
